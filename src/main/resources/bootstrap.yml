@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mccasani-o/admin-config-data.git
+          #uri: https://github.com/mauricioccasani/pr-config.git
+          search-paths: admin-config-data
+          default-label: "main"
